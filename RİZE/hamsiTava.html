@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamsi Tava</title>
+    <link rel="stylesheet" href="lezzet.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="fotograflar/WhatsApp Görsel 2024-08-31 saat 14.02.33_75c833f3.jpg">
+            </div>
+          <div id="zaman"></div>
+            <script>
+                function tarihSaat() {
+                    var date = new Date().toLocaleString('tr-TR');
+                    document.getElementById('zaman').innerHTML = date;
+                }
+                setInterval(tarihSaat, 1000);
+            </script>
+        </div>
+
+        <div class="content">
+            <div class="row">
+                <div class="card">
+                    <h1>Hamsi Tava</h1>
+                    <p> Hamsi balığı tavası, hamsilerin şişe geçirilerek kızartılması ile hazırlanan bir tava türüdür.Basılı ilk yemek kitabı Melceü’t-Tabbâhîn'de tarifi vardır.
+                        <br><br>
+                        <img src="fotograflar/hamsi-tava.jpg" alt="Hamsi Tava" width="400" height="250">
+                    </p>
+
+                    <div class="map-section">
+                        <h1>Tarif</h1>
+                        <h2>Malzemeler</h2>
+                        <ul>
+                            <li>1 kilo hamsi</li>
+                            <li>1 tatlı kaşığı tuz</li>
+                            <li>Yarım su bardağı mısır unu</li>
+                            <li>4 yemek kaşığı sıvı yağ</li>
+                        </ul>
+                        <h2>Yapılışı</h2>
+                        <ol>
+                            <li>Balıkların temizledikten sonra (kafasını koparıp, içini boşaltın) iyice yıkayalım  ve suyunu süzelim.</li>
+                            <li>Ardından uygun bir bir kaba koyarak tuz serpelim, elimizle karıştıralım.</li>
+                            <li>Hamsileri, tabağa koyduğunuz mısır ununa güzelce bulayalım.</li>
+                            <li>Tavaya sıvı yağı koyarak fırça yardımı ile her tarafına gelmesini sağlayalım.</li>
+                            <li>Balıkları aynı yönde, sıkı bir şekilde dizerek daire oluşturalım ve tavamızı ocağa alarak yüksek ateşte 7-8 dakika pişmeye bırakalım. Balıklarınızı tavanıza göre tek seferde pişirebileceğiniz gibi 3 seferde porsiyonluk olarak da pişirebilirsiniz.</li>
+                            <li>Balıkların alt kısmı kızardıktan sonra üzerine düz bir kapak kapatalım ve fazla yağını ayrı bir kaba süzdürelim.</li>
+                            <li>Daha sonra balıklarımızın diğer yüzünü de çevirerek süzdürdüğümüz yağı tekrar üzerine gezdirelim ve kızarmaya bırakalım.</li>
+                            <li>Balıklarımızın her iki yüzeyi kızardığında servis tabağına alalım.</li>
+                        </ol>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="container-index">
+                <h4>İLETİŞİM</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/kopuzznisa/" target="_blank">
+                        <img src="fotograflar/instagram.256x256 (1).png" alt="Instagram" class="social-icon">
+                    </a>
+                    <a href="mailto:nisakopuz60@gmail.com">
+                        <img src="fotograflar/email_2594213.png" alt="Email" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

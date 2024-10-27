@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabak Sütlacı</title>
+    <link rel="stylesheet" href="lezzet.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="fotograflar/WhatsApp Görsel 2024-08-31 saat 14.02.33_75c833f3.jpg">
+            </div>
+            <div id="zaman"></div>
+            <script>
+                function tarihSaat() {
+                    var date = new Date().toLocaleString('tr-TR');
+                    document.getElementById('zaman').innerHTML = date;
+                }
+                setInterval(tarihSaat, 1000);
+            </script>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="card">
+                    <h1>Kabak Sütlacı</h1>
+                    <p> Kabak sütlacı, kabak, süt ve undan yapılan bir tatlı çeşididir. Genellikle balkabağı kullanılarak yapılır ve Rize, Sakarya ve Bayburt gibi bölgelerde popülerdir. Tarifi için genellikle bal kabağı, süt, toz şeker ve nişasta gibi malzemeler kullanılır.
+                        <br><br>
+                        <img src="fotograflar/1591023125.webp" alt="Kabak Sütlacı" width="500" height="250">
+                    </p>
+
+                    <div class="map-section">
+                        <h1>Tarif</h1>
+                        <h2>Malzemeler</h2>
+                        <ul>
+                            <li>1 kg bal kabağı</li>
+                            <li>1 litre süt</li>
+                            <li>1 su bardağı toz şeker</li>
+                            <li>2 yemek kaşığı nişasta</li>
+                        </ul>
+                        <h2>Yapılışı</h2>
+                        <ol>
+                            <li>Kabakları dilimleyip kabuklarını soyuyoruz.</li>
+                            <li>Büyük bir tencereye alıp üzerine biraz geçene kadar su ilave ediyoruz.</li>
+                            <li>Üzerine şekeri ilave edip, pişirmeye bırakıyoruz.</li>
+                            <li>Kabaklar iyice piştikten sonra blender ile iyice eziyoruz.</li>
+                            <li>Nişastayı bir kaba alıp, süt ile açıyoruz.</li>
+                            <li>Kalan sütü kabakların üzerine döküp nişastayıda ekleyip, kaynayana kadar karıştıra karıştıra pişiriyoruz.</li>
+                            <li>Muhallebi kıvamına geldiğinde altını kapatıp, kaselere boşaltıyoruz.</li>
+                        </ol>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="container-index">
+                <h4>İLETİŞİM</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/kopuzznisa/" target="_blank">
+                        <img src="fotograflar/instagram.256x256 (1).png" alt="Instagram" class="social-icon">
+                    </a>
+                    <a href="mailto:nisakopuz60@gmail.com">
+                        <img src="fotograflar/email_2594213.png" alt="Email" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

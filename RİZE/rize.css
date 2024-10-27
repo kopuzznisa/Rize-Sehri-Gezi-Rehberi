@@ -1,0 +1,366 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: url('fotograflar/web-25.png') no-repeat center center fixed;
+    background-size: cover; /* Arka plan resmini tam ekran kaplamak için */
+}
+
+.forest {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.eagle {
+    position: absolute;
+    top: 50%; /* Sayfanın ortasında konumlandır */
+    transform: translateY(-50%); /* Merkezlemek için */
+    right: -100px; /* Ekranın dışından başlayın */
+    width: 400px; /* Gerektiği gibi boyutlandırın */
+    height: auto;
+    animation: flyEagle 10s linear infinite; /* Animasyon süresini ve tekrarı ayarlayın */
+    animation-delay: 0s; /* İlk başlangıç süresini ayarlayın */
+    z-index: 1; /* Z-index değeri daha düşük */
+    mix-blend-mode: screen; 
+    filter: brightness(2.0) contrast(2.0) saturate(2.0); 
+}
+
+@keyframes flyEagle {
+    0% {
+        right: -100px; /* Ekranın dışından başlayın */
+        transform: translateY(-50%);
+    }
+    25% {
+        right: 25%; /* Ekranın 1/4'ünde */
+        transform: translateY(-100px); /* Yukarı doğru hareket */
+    }
+    50% {
+        right: 50%; /* Ekranın ortasında */
+        transform: translateY(-50%); /* Orta konuma geri dön */
+    }
+    75% {
+        right: 75%; /* Ekranın 3/4'ünde */
+        transform: translateY(0); /* Aşağı doğru hareket */
+    }
+    100% {
+        right: 100%; /* Ekranın dışına çıkacak */
+        transform: translateY(-50%);
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Logo, arama çubuğu ve saat arasında boşluk bırakır */
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Yarı şeffaf arka plan */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Gölge */
+    border-radius: 10px; /* Köşe yuvarlama */
+    margin: 40px; /* Genel boşluk */
+}
+
+.logo {
+    padding-left: 20px; /* Sol kenardan boşluk */
+}
+
+.logo img {
+    max-height: 100px; /* Logonun maksimum yüksekliği */
+    object-fit: contain; /* Logonun orantılı olarak sığmasını sağlar */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center; /* Arama çubuğu ve butonu hizalar */
+    margin-right: 20px; /* Saatten önce boşluk bırak */
+}
+
+.search-bar input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.8); /* Yarı şeffaf arka plan */
+    width: 200px; /* Genişlik belirleme */
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #d2cccc; /* Arka plan rengi */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px; /* Giriş alanı ile buton arasındaki boşluk */
+    display: flex;
+    align-items: center; /* Buton içindeki resim ile hizalama */
+}
+
+.search-bar button img {
+    width: 20px; /* İkonun boyutu */
+    height: 20px;
+}
+
+#zaman {
+    font-size: 18px;
+    color: #333; /* Yazı rengi */
+    padding: 10px;
+    background-color: #d2cccc; /* Buton rengi ile uyumlu arka plan */
+    border-radius: 10px; /* Köşe yuvarlama */
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    z-index: 2; /* Kartların z-index değeri daha yüksek */
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 40px; /* Sol tarafta resmi hizalamak için aynı boşluk */
+    margin-right: 40px;
+}
+
+.row .card {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.row .card h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.row .card h1::after {
+    content: "";
+    display: block;
+    width: calc(100% - 80px); /* Sol ve sağdaki boşlukları dikkate almak için genişliği ayarlayın */
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.row .card p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #666;
+    text-align: justify;
+    margin-top: 20px; /* h1 başlığı ile paragraflar arasında boşluk bırakmak için */
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.table-container {
+    margin: 20px 70px; /* Yukarı ve aşağıdan 20px, sağ ve soldan 70px boşluk */
+}
+
+.table {
+    width: 100%;
+    font-size: 18px;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    border: 1px solid #ddd; /* Tablonun kenarları için sınır */
+    color: #666;
+}
+
+.table h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.table h1::after {
+    content: "";
+    display: block;
+    width: calc(100% - 80px); /* Sol ve sağdaki boşlukları dikkate almak için genişliği ayarlayın */
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.table td {
+    padding: 12px 40px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Alt çizgi stil */
+    border-right: 1px solid #ddd; /* Sağ kenar çizgisi */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Çift satırların arka plan rengi */
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1; /* Üzerine gelindiğinde satır arka plan rengi */
+}
+
+.gallery, .gallery2, .gallery3 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+}
+
+.gallery-item, .gallery2-item, .gallery3-item {
+    flex: 0 0 calc(25% - 10px);
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.gallery-item img, .gallery2-item img, .gallery3-item img {
+    width: 215.4px;
+    height: 160.4px;
+    object-fit: cover;
+}
+
+.gallery-item h3, .gallery2-item h3, .gallery3-item h3 {
+    color: black;
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+}
+
+.gallery-item a, .gallery2-item a, .gallery3-item a {
+    text-decoration: none; /* Bağlantının kendisinde alt çizgi olmadığından emin olur */
+}
+
+.gallery-item a:hover h4, .gallery2-item a:hover h4, .gallery3-item a:hover h4 {
+    color: black; /* Başlık rengi üzerine gelindiğinde siyah kalır */
+}
+
+.pagination-container, .pagination2-container, .pagination-container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination-button, .pagination2-button, .pagination3-button {
+    margin: 0 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover, .pagination2-button:hover, .pagination3-button:hover {
+    background-color: #0056b3;
+}
+
+.pagination button, .pagination2 button, .pagination3 button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover, .pagination2 button:hover, .pagination3 button:hover {
+    background-color: #0056b3;
+}
+
+.active {
+    background-color: #0056b3;
+}
+
+#footer {
+    width: 100vw;
+    margin: 0;
+    padding: 30px 0;
+    background-color: rgba(255, 255, 255, 0.8); /* row .card ile uyumlu arka plan */
+    text-align: center;
+    box-sizing: border-box; /* Kenarlarda boşluk kalmaması için */
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* row .card ile uyumlu gölge efekti */
+    border-radius: 10px; /* row .card ile uyumlu köşe yuvarlama */
+    margin-top: 40px; /* Genel boşluk */
+}
+
+#footer h4 {
+    font-size: 22px;
+    margin: 20px 0;
+    padding-left: 30px;
+    text-align: center; /* Başlıkları ortalamak için */
+    position: relative;
+}
+
+#footer h4::after {
+    content: "";
+    display: block;
+    width: 50%; /* Çizginin genişliğini yarıya indirir */
+    height: 2px; /* Çizginin kalınlığı */
+    background-color: #333; /* Çizginin rengi */
+    margin: 10px auto; /* Çizgiyi başlık ile iconlar arasında ortalamak için */
+    border-radius: 1px; /* Çizginin köşelerini yuvarlar */
+}
+
+#footer .social-icons {
+    display: flex;
+    padding-left: 80px;
+    justify-content: center; /* İkonları tam ortalar */
+    gap: 20px; /* İkonlar arasındaki boşluğu ayarlar */
+    margin-top: 20px; /* İkonlar ve çizgi arasındaki boşluk */
+}
+
+#footer .social-icons a {
+    text-decoration: none; /* Link altı çizgiyi kaldırır */
+}
+
+#footer .social-icon {
+    width: 30px; /* İkonların genişliği (küçük boyut) */
+    height: 30px; /* İkonların yüksekliği */
+    filter: grayscale(100%); /* İkonları siyah-beyaz yapar */
+    transition: filter 0.3s ease; /* Efekt geçiş süresi */
+}
+
+#footer .social-icon:hover {
+    filter: grayscale(0%); /* Üzerine gelindiğinde renkli yapar */
+}
+
+#footer .container_index {
+    margin-top: 40px; /* row .card ile uyumlu boşluk */
+}

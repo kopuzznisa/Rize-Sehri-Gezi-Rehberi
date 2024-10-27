@@ -1,0 +1,201 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: url('fotograflar/web-25.png') no-repeat center center fixed;
+    background-size: cover; /* Arka plan resmini tam ekran kaplamak için */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Logo, arama çubuğu ve saat arasında boşluk bırakır */
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Yarı şeffaf arka plan */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Gölge */
+    border-radius: 10px; /* Köşe yuvarlama */
+    margin: 40px; /* Genel boşluk */
+}
+
+.logo {
+    padding-left: 20px; /* Sol kenardan boşluk */
+}
+
+.logo img {
+    max-height: 100px; /* Logonun maksimum yüksekliği */
+    object-fit: contain; /* Logonun orantılı olarak sığmasını sağlar */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center; /* Arama çubuğu ve butonu hizalar */
+    margin-right: 20px; /* Saatten önce boşluk bırak */
+}
+
+.search-bar input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.8); /* Yarı şeffaf arka plan */
+    width: 200px; /* Genişlik belirleme */
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #d2cccc; /* Arka plan rengi */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px; /* Giriş alanı ile buton arasındaki boşluk */
+    display: flex;
+    align-items: center; /* Buton içindeki resim ile hizalama */
+}
+
+.search-bar button img {
+    width: 20px; /* İkonun boyutu */
+    height: 20px;
+}
+
+#zaman {
+    font-size: 18px;
+    color: #333; /* Yazı rengi */
+    padding: 10px;
+    background-color: #d2cccc; /* Buton rengi ile uyumlu arka plan */
+    border-radius: 10px; /* Köşe yuvarlama */
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    z-index: 2; /* Kartların z-index değeri daha yüksek */
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-left: 40px; /* Sol tarafta resmi hizalamak için aynı boşluk */
+    margin-right: 40px;
+}
+
+.row .card {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.row .card h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.row .card h1::after {
+    content: "";
+    display: block;
+    width: calc(100% - 80px); /* Sol ve sağdaki boşlukları dikkate almak için genişliği ayarlayın */
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.row .card p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #666;
+    text-align: justify;
+    margin-top: 20px; /* h1 başlığı ile paragraflar arasında boşluk bırakmak için */
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.row .card h3 {
+    font-size: 25px;
+    padding-left: 29px;
+    padding-top: 20px;
+}
+
+.map-section {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center; /* Başlık ve iframe'in ortalanmasını sağlar */
+}
+
+.map-section iframe {
+    border-radius: 8px; /* İsteğe bağlı olarak köşeleri yuvarlatabilirsiniz */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif bir gölge ekler */
+}
+
+#footer {
+    width: 100vw;
+    margin: 0;
+    padding: 30px 0;
+    background-color: rgba(255, 255, 255, 0.8); /* row .card ile uyumlu arka plan */
+    text-align: center;
+    box-sizing: border-box; /* Kenarlarda boşluk kalmaması için */
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* row .card ile uyumlu gölge efekti */
+    border-radius: 10px; /* row .card ile uyumlu köşe yuvarlama */
+    margin-top: 40px; /* Genel boşluk */
+}
+
+#footer h4 {
+    font-size: 22px;
+    margin: 20px 0;
+    padding-left: 30px;
+    text-align: center; /* Başlıkları ortalamak için */
+    position: relative;
+}
+
+#footer h4::after {
+    content: "";
+    display: block;
+    width: 50%; /* Çizginin genişliğini yarıya indirir */
+    height: 2px; /* Çizginin kalınlığı */
+    background-color: #333; /* Çizginin rengi */
+    margin: 10px auto; /* Çizgiyi başlık ile iconlar arasında ortalamak için */
+    border-radius: 1px; /* Çizginin köşelerini yuvarlar */
+}
+
+#footer .social-icons {
+    display: flex;
+    padding-left: 80px;
+    justify-content: center; /* İkonları tam ortalar */
+    gap: 20px; /* İkonlar arasındaki boşluğu ayarlar */
+    margin-top: 20px; /* İkonlar ve çizgi arasındaki boşluk */
+}
+
+#footer .social-icons a {
+    text-decoration: none; /* Link altı çizgiyi kaldırır */
+}
+
+#footer .social-icon {
+    width: 30px; /* İkonların genişliği (küçük boyut) */
+    height: 30px; /* İkonların yüksekliği */
+    filter: grayscale(100%); /* İkonları siyah-beyaz yapar */
+    transition: filter 0.3s ease; /* Efekt geçiş süresi */
+}
+
+#footer .social-icon:hover {
+    filter: grayscale(0%); /* Üzerine gelindiğinde renkli yapar */
+}
+
+#footer .container_index {
+    margin-top: 40px; /* row .card ile uyumlu boşluk */
+}
