@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayder Yaylası</title>
+    <link rel="stylesheet" href="gezilecekYerler.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="fotograflar/WhatsApp Görsel 2024-08-31 saat 14.02.33_75c833f3.jpg">
+            </div>  
+            <div id="zaman"></div>
+            <script>
+                function tarihSaat() {
+                    var date = new Date().toLocaleString('tr-TR');
+                    document.getElementById('zaman').innerHTML = date;
+                }
+                setInterval(tarihSaat, 1000);
+            </script>
+        </div>
+
+        <div class="content">
+            <div class="row">
+                <div class="card">
+                    <h1>Ayder Yaylası</h1>
+                    <p>Ayder, Rize'nin Çamlıhemşin ilçesinin 19 km güneydoğusunda yer alan 1350 m rakımda ladin ve kayın ormanlarıyla kaplı bir yayladır. 1300'lü yıllarda Hala Vadisi'nde yaşayanlar tarafından kurulmuştur. 
+                        <br><br>
+                        <img src="fotograflar/thumbs_b_c_97bbb9ef955ccbac9534d84ef6e11b45.jpg" alt="Ayder Yaylası" width="500" height="250"><br><br>
+                        Ayder hiçbir zaman yayla olarak kullanılmamıştır, Ayder'i Hala Vadisi'nde yaşayanlar dinlenme amaçlı kullanmışlardır. Bölge halkı, Hala köyünden yaylalarına (Kavrun, Ceymakçur, Paákçur) göç ederken Ayder'de kaplıcada dinlenirler. Araştırmacı Metehan Mollamehmetoğlu, Ayder'in 1900'lü yıllarda bölge insanının dinlenme yeri olarak kullanıldığını belirtmektedir. Kaplıcanın geçmişi 1700'lü yıllara dayanmaktadır.
+                        <br><br>
+                        Hala Vadisi'nde yaşayanların kullandıkları Ayder, Aşağı Ceymakçur ve Yukarı Ceymakçur adlı üç yayla vardır. Mayıs ayında Ayder haziran ayında aşağı Ceymakçur temmuz ayında Yukarı Ceymakçur yaylalarına gidilir. Ağustos ayında Aşağı Ceymakçur'a gidilirken Ayder'de Hodoc olarak bilinen ot biçme şenlikleri düzenlenir. Eylül ayında da Ayder'e gidilir ve ekim ayında da Hala köyüne dönerlerdi. Bölge sakinleri yakın zamana kadar Ayder'i yayla olarak kullanırlardı. Turizmle beraber Ayder yaylası turizm ve eğlence merkezi oldu.
+                    </p>
+
+                    <div class="map-section">
+                        <h3>Konum Bilgisi</h3>
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.9002221660476!2d41.00105507551608!3d41.04931101689806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40663f822169bc03%3A0xb008da23717c6e19!2sAyder%20yaylasi!5e0!3m2!1str!2str!4v1722949282801!5m2!1str!2str"  
+                            width="100%" height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="container-index">
+                <h4>İLETİŞİM</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/kopuzznisa/" target="_blank">
+                        <img src="fotograflar/instagram.256x256 (1).png" alt="Instagram" class="social-icon">
+                    </a>
+                    <a href="mailto:nisakopuz60@gmail.com">
+                        <img src="fotograflar/email_2594213.png" alt="Email" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script src="arama.js"></script>
+
+    </div>
+</body>
+</html>

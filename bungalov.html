@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bungalov Evler</title>
+    <link rel="stylesheet" href="gezilecekYerler.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="fotograflar/WhatsApp Görsel 2024-08-31 saat 14.02.33_75c833f3.jpg">
+            </div>
+         <div id="zaman"></div>
+            <script>
+                function tarihSaat() {
+                    var date = new Date().toLocaleString('tr-TR');
+                    document.getElementById('zaman').innerHTML = date;
+                }
+                setInterval(tarihSaat, 1000);
+            </script>
+        </div>
+
+        <div class="content">
+            <div class="row">
+                <div class="card">
+                    <h1>Bungalov Evler</h1>
+                    <p> Rize'de bungalov otelleri, doğal güzellikler içerisinde konaklama imkanı sunmaktadır.
+                         <br><br>
+                        <img src="fotograflar/5107_v_257492.jpg" alt="Bungalov Evler" width="500" height="250"><br><br>
+                        Ayrıca, Organik Köy Bungalov gibi yerler, samimi bir aile ortamı sağlayarak 12 ay boyunca konaklama imkanı sunar. Fiyat ve rezervasyon seçeneklerini karşılaştırmayı unutmayın.
+                    </p>
+
+                </div>  
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="container-index">
+                <h4>İLETİŞİM</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/kopuzznisa/" target="_blank">
+                        <img src="fotograflar/instagram.256x256 (1).png" alt="Instagram" class="social-icon">
+                    </a>
+                    <a href="mailto:nisakopuz60@gmail.com">
+                        <img src="fotograflar/email_2594213.png" alt="Email" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

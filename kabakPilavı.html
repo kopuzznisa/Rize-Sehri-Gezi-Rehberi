@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabak Pilavı</title>
+    <link rel="stylesheet" href="lezzet.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="fotograflar/WhatsApp Görsel 2024-08-31 saat 14.02.33_75c833f3.jpg">
+            </div>
+           <div id="zaman"></div>
+            <script>
+                function tarihSaat() {
+                    var date = new Date().toLocaleString('tr-TR');
+                    document.getElementById('zaman').innerHTML = date;
+                }
+                setInterval(tarihSaat, 1000);
+            </script>
+        </div>
+
+        <div class="content">
+            <div class="row">
+                <div class="card">
+                    <h1>Kabak Pilavı</h1>
+                    <p> Kabak pilavı veya kabaklı pilav; Rize, Trabzon ve Artvin illerine özgü bir pilav yemeğidir.
+                        <br><br>
+                        <img src="fotograflar/Bal-Kabakli-Pilav.png" alt="Kabak Pilavı" width="500" height="250">
+                    </p>
+
+                    <div class="map-section">
+                        <h1>Tarif</h1>
+                        <h2>Malzemeler</h2>
+                        <ul>
+                            <li>2 su bardağı pirinç</li>
+                            <li>1. 5 çorba kasesi bal kabağı (küp doğranmış)</li>
+                            <li>1 yemek kaşığı tereyağ</li>
+                            <li>Yarım yemek kaşığı zeytinyağ</li>
+                            <li>Su</li>
+                            <li>Tuz</li>
+                            <li>Şeker</li>
+                        </ul>
+                        <h2>Yapılışı</h2>
+                        <ol>
+                            <li>Bal kabakları soyulup küp küp doğranır. (Bu pilav yörede iyi çıkmayan yani kabak tatlısı yapılacak gibi çıkmayan kabaklardan yapılır. İyi çıkan kabaklar tatlıda değerlendirilir.)</li>
+                            <li>Tencereye yağı koyuyoruz. Sonra kabakları ekleyip kavuruyoruz.</li>
+                            <li>Sonra üzerine yıkanmış süzülmüş pirinçi ekleyip kavuruyoruz.</li>
+                            <li>Tuzunu da ekleyip soğuk su koyup pişmeye bırakıyoruz.(Pirinci biraz geçene kadar)</li>
+                            <li>Suyu kaynadıktan sonra birazcık daha harlı ateşte pişiyor. Bu arada pilavı bir kere karıştırıyoruz. Sonra ateşi kısıyoruz.</li>
+                            <li>Piştiğinde altını kapatıp bir kere daha pilavı karıştırıp demlenmeye bırakıyoruz.</li>
+                            <li>Tabağa servis edildiğinde üzerine toz şeker serpip o şekilde yiyoruz</li>
+                        </ol>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="container-index">
+                <h4>İLETİŞİM</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/kopuzznisa/" target="_blank">
+                        <img src="fotograflar/instagram.256x256 (1).png" alt="Instagram" class="social-icon">
+                    </a>
+                    <a href="mailto:nisakopuz60@gmail.com">
+                        <img src="fotograflar/email_2594213.png" alt="Email" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
